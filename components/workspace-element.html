@@ -1,0 +1,46 @@
+<link rel="import" href="./bower_components/polymer/polymer.html">
+
+<!--
+`workspace-element`
+
+
+@demo demo/index.html 
+-->
+
+<dom-module id="workspace-element">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <h2>Hello [[prop1]]</h2>
+    [[url]]<br/>
+    [[secret]]<br/>
+    [[key]]
+  </template>
+
+  <script>
+    Polymer({
+
+      is: 'workspace-element',
+
+      properties: {
+        prop1: {
+          type: String,
+          value: 'world',
+        },
+        url: {
+          type: String
+        },
+        secret: {
+          type: String
+        },
+        key: {
+          type: String
+        }
+      },
+
+    });
+  </script>
+</dom-module>
